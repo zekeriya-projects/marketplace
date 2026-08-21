@@ -1,0 +1,2 @@
+import {Head} from '@inertiajs/react'; import AuthenticatedLayout from '../../Layouts/AuthenticatedLayout'; import CatalogReferencePage from '../../Components/CatalogReferencePage';
+export default function Index(props:any){return <AuthenticatedLayout><Head title="Kategoriler"/><CatalogReferencePage title="Kategoriler" singular="Kategori" endpoint="categories" items={props.categories} parentOptions={props.options} canManage={props.canManage} channelAccounts={props.channelAccounts} mappings={props.mappings}/></AuthenticatedLayout>}
